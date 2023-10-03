@@ -28,10 +28,8 @@ headers: {
     const updateButton = tr.querySelector('.update-button');
     if (updateButton) {
       updateButton.addEventListener('click', () => {
-        console.log(element)
         window.location.href = 'updateForm.html';
         localStorage.setItem('records',JSON.stringify(element));
-        console.log(element)
       });
     }
     const deleteButton = tr.querySelector('.delete-button');
